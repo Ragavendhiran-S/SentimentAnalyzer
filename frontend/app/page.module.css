@@ -1,0 +1,256 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  /* height: 100vh; */
+  background-color: #f7f9fc;
+  font-family: 'Arial', sans-serif;
+  /* padding: 20px; Added padding for better spacing */
+  /* margin-top: 30vh; */
+}
+
+
+.textQueryArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  /* Full width */
+  max-width: 600px;
+  /* Limit maximum width */
+  /* margin: 20px; */
+}
+
+.h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  /* Center text */
+}
+
+.textarea {
+  width: 100%;
+  /* Full width */
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  /* Added margin for spacing */
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.button:hover {
+  background-color: #8cc98f;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+}
+
+.result strong {
+  color: #4caf50;
+}
+
+.result p {
+  margin: 5px 0;
+}
+
+.loader {
+  border: 16px solid #f7f9fc;
+  border-radius: 50%;
+  border-top: 16px solid #4caf50;
+  border-right: 16px solid;
+  border-bottom: 16px solid;
+  border-color: #f7f9fc #4caf50;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.resultContainer {
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: space-between;
+   */
+   /* width: 40vw;
+    */
+}
+.wordSentiments {
+  margin-top: 20px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 3%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* width: 100%; */
+  /* Full width */
+}
+
+.lineChart {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  /* padding: 3%; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wordSentiments h2 {
+  margin: 0 0 10px 0;
+}
+
+.wordSentiments ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wordSentiments li {
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sentimentScore {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.lineChart {
+  color: black;
+  width: 100%;
+  /* Full width */
+}
+
+.resultContainer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wordSentiments {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .resultContainer {
+    /* width: 100%;
+     */
+     width: 40vw;
+     display: flex;
+     flex-direction: column;
+     margin-bottom: 10px;
+  }
+}
+
+
+.faqSection {
+  margin-top: 20px;
+  background-color: #f7f9fc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 350px;
+  width: 40vw;
+}
+
+.faqTitle {
+  cursor: pointer;
+  font-weight: bold;
+  color: #4caf50;
+  margin: 9px 9px;
+  text-align: justify;
+}
+
+.faqTitleFeature {
+  text-align: center;
+}
+
+.faqAnswer {
+  margin: 10px;
+  color: #333;
+  text-align: justify;
+  /* animation: ; */
+}
+
+.faqItem {
+  margin: 10px 0;
+  text-align: center;
+  border: solid rgb(194, 192, 192);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+
+.loaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* Full viewport height to center the loader */
+}
+
+.loader {
+  border: 16px solid #f7f9fc;
+  border-radius: 50%;
+  border-top: 16px solid #4caf50;
+  border-right: 16px solid;
+  border-bottom: 16px solid;
+  border-color: #f7f9fc #4caf50;
+  width: 120px;
+  height: 120px;
+  animation: spin 1s linear infinite;
+  /* margin-top: 100px;
+  disp */
+  margin-top: 300px;
+}
+
+.resultContainer {
+  min-width: 350px;
+}
+
+.lineChart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
