@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS  # Import CORS to handle cross-origin requests
-import sentiment_analyzer
 import spacy
 from spacytextblob.spacytextblob import SpacyTextBlob
 
