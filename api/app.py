@@ -34,7 +34,7 @@ def analyze():
     if not text or 'query' not in text:
         return jsonify({'error': 'No text provided'}), 400  # Handle missing key
 
-    sentiment = sentiment_analyzer.spacy_sentiment(text['query'])
+    sentiment = spacy_sentiment(text['query'])
     return jsonify({'sentiment': sentiment[0], 'word_sentiment' :sentiment[1]})
 
 if __name__ == '__main__':
